@@ -1,0 +1,79 @@
+.dropdown {
+   position: relative; 
+}
+nav {
+   display: block;
+}
+.ui-g-1, .ui-g-2, .ui-g-3, .ui-g-4, .ui-g-5, .ui-g-6, .ui-g-7, .ui-g-8, .ui-g-9, .ui-g-10, .ui-g-11, .ui-g-12 {
+   float: left;
+   box-sizing: border-box;
+   padding: 0.5em;
+}
+.ui-g-2 {
+   width: 16.6667%;
+}
+.ui-g-10 {
+   width: 83.3333%;
+}
+menu {
+   list-style-type: disc;
+}
+menuitem {
+   display: block;
+   padding: 5px;
+   cursor: pointer;
+}
+a {
+   color: black;
+}
+a.active {
+   font-weight: 700;
+   color: black;
+}
+a:hover {
+   color: black;
+}
+
+.left a {
+   margin-left: 20px;
+}
+.admin-content {
+   font-size: 18px;
+   padding: 1.5em;
+}
+
+label {
+   width: 80px;
+}
+.navbar-brend {
+   color: aliceblue;
+}
+
+html, body {
+   min-height: 100%;
+   background: #dddddd;
+}
+
+#footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   text-align: center;
+}
+.blue {
+   color: blue;
+}
+.timer {
+font-family: sans-serif;
+display: inline-block;
+padding: 24px 32px;
+border-radius: 30px;
+background: white;
+}
+
+.timer__path {
+   font-size: 36px;
+   font-weight: bold;
+}

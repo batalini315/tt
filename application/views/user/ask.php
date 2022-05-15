@@ -6,18 +6,18 @@
     <span class="timer__path" id="seconds">00</span>
 </div>
 <?php 
-print_r($user);
-echo('<br>tasks: ');
-print_r($tasks);
-echo('<br>test: ');
-print_r($test);
-echo('<br>num test'.$val);
-echo('<br><a href='.$user['id'].' >'.$user['name'].'</a><br>');
+// print_r($user);
+// echo('<br>tasks: ');
+// print_r($tasks);
+// echo('<br>test: ');
+// print_r($test);
+// echo('<br>num test'.$val);
+// echo('<br><a href='.$user['id'].' >'.$user['name'].'</a><br>');
 
 ?>
+<br>
 Время для задания: <?=$test['time']?>
 <form action="/answer/<?=$test['id']?>" method="post" id="myForm">
-<input type="textbox" id="field"/>
 <?php
         foreach ($tasks as $task)
         {
@@ -28,10 +28,10 @@ echo('<br><a href='.$user['id'].' >'.$user['name'].'</a><br>');
             echo('   Максимальная оценка ответа: '.$task['max_rating']);
         }
 ?>
-<input type="hidden" name="user" value="<?=$user['id']?>">
 <br>
 <input type="submit" value="Отправить">
 </form>
 </div>
 
+<script src="../../../assets/js/jquery.v3.6.0.js" type="module"></script>
 <script src="../../../assets/js/myjs.js" type="module"></script>

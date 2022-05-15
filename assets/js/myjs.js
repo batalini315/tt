@@ -69,12 +69,18 @@ window.onblur = function() {
     //         alert('is seccuss');
     //     }
     // });
+    $("form").serialize();
+    document.getElementById("myForm").requestSubmit();
+    // $.post('/index.php', {text: 'Текст'}, function(data){
+    //     alert(data);
+    // });
         closeTest();
-        // alert( 'Фокус то ушел' );    
+        alert( 'Фокус то ушел' );    
     }
 
 function closeTest() {
     $("textarea").attr("disabled", "true");
+    $("input").attr("disabled", "true");
 }
 
 
